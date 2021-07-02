@@ -1,0 +1,27 @@
+{
+  "name": "syker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "back": "cd backend && npm start",
+      "front": "cd frontend && npm start",
+      "start": "concurrently --kill-others-on-fail --names \"backend,frontend\" \"npm run back\" \"npm run front\"",
+      "postinstall":"cd frontend && npm install && cd .. && cd backend && npm install"
+    },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taporian/Syker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taporian/Syker/issues"
+  },
+  "homepage": "https://github.com/taporian/Syker#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
