@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const PostSchema = new Schema({
+const PostCategory1 = new Schema({
     shirt: {
         type: String,
         required:true
     },
-    size: {
+    pants: {
         type: String,
         required: true
     }
 });
-module.exports = mongoose.model('Shirts',PostSchema);
+module.exports = mongoose.model('Category1',PostCategory1);

@@ -1,0 +1,48 @@
+header div {
+  display: flex;
+  margin-left: 80.9%;
+  align-items: center;
+}
+.logoSkyer {
+  width: 5%;
+  height: 5%;
+}
+.secondNav ul {
+  display: flex;
+}
+
+.mainNavBar nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.mainNavBar ul {
+  border-style: solid;
+  border-width: thick;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  text-align: center;
+}
+
+.mainNavBar li {
+  margin: 20px;
+}
+
+.mainNavBar a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainNavBar a:hover,
+.mainNavBar a:active {
+  color: #fa923f;
+}
+
+#categoriesNav {
+  display: flex;
+  border-style: none;
+  margin-left: 20%;
+  padding: 0;
+}
