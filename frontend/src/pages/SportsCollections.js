@@ -7,9 +7,7 @@ class SportsCollections extends Component {
     return (
       
       <div>
-      
-        <Link to="/SportsCollections" >Home </Link>
-     <Route path="/SportsCollections" component={itemViews} /> 
+      <h2>SportsCollections</h2>
       </div>
 
     );

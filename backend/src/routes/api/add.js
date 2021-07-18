@@ -48,7 +48,7 @@ router.post('/add', async (req,res)=>{
 });
 router.get('/read', async (req,res) => {
     try{
-        const posts= await Shirts.find();
+        const posts = await Shirts.find();
         if(!posts) throw Error('No Shirts');
         res.status(200).json(posts);
 
