@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import './Category_2.css'
-import { Route, Link } from 'react-router-dom';
 
 class Category_2 extends React.Component {
   state ={

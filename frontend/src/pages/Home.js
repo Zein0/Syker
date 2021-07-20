@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Home.css'
-import {Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ImageSlider from '../components/ImageSlider';
 import { SliderDataSports_1,SliderDataSports_2,SliderDataSports_3,SliderDataCasual_1,SliderDataCasual_2,SliderDataCasual_3 } from '../components/SliderData';
-
-
-const API_URL = "http://localhost:8000";
+import Slideshow from '../components/SlideShow';
 class Home extends React.Component {
   
   render(){
     return (
 
      <body>
-      <div>
+      <div >
      
      
     <div className="containerImage">
       
             <div className="container-box-Image">
-            < ImageSlider slides={SliderDataSports_1} />
+          
+            < Slideshow slides={SliderDataSports_1} />
                 <div class="overlay">
                 {/* <div class="homeImage-overlay-button"><Link to='/ImageSlider'> BUTTON </Link></div> */}
                 </div>
@@ -29,6 +28,7 @@ class Home extends React.Component {
 
 
             <div className="container-box-Image">
+              
             < ImageSlider slides={SliderDataSports_2} />
             <div class="overlay">
                 {/* <div class="homeImage-overlay-button"><a href={`${API_URL}/uploads/home-3.jpg`} > BUTTON </a></div> */}

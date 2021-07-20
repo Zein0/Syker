@@ -1,12 +1,8 @@
 import './App.css';
-import React, { Component,useState } from 'react';
-import { BrowserRouter , Route} from 'react-router-dom';
-import SportsCollections from './pages/SportsCollections';
+import React, { Component } from 'react';
+import { BrowserRouter} from 'react-router-dom';
 import MainNavBar from './components/MainNavBar';
-import axios from 'axios';
-import Contacts from './pages/Contacts';
-import Casual from './pages/Casual';
-import Home from './pages/Home';
+
 
 
 
@@ -19,14 +15,7 @@ class App extends Component {
        <div className = "App">
           <BrowserRouter>
               <MainNavBar />
-          </BrowserRouter>
-         
-          
-          
-        
-         
-         
-         
+          </BrowserRouter>       
        </div>
       
       </div>

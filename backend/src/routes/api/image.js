@@ -101,7 +101,9 @@ ImageRouter.route("/uploadbase")
 ImageRouter.get('/readImage', async (req,res) => {
     try{
         
-        const postsimageName = await Image.findOne({imageData:req.body.imageData});
+        const postsimageName = await Image.find();
+       
+       
         if(!postsimageName) throw Error('No Image');
         res.status(200).json(postsimageName);
 

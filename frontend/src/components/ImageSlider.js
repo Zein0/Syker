@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { SliderDataSports_1,SliderDataSports_2,SliderDataSports_3,SliderDataCasual_1,SliderDataCasual_2,SliderDataCasual_3 } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import './ImageSlider.css'
 
@@ -34,7 +33,7 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt='travel image' className='homeImage' />
+              <img alt="Home-Page-Manual-Ads" src={slide.image} className='homeImage' />
             )}
           </div>
         );
