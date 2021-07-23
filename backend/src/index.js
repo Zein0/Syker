@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose');
 const { MONGO_URI } = require('./config');
+const cookieParser = require('cookie-parser');
 const path = require('path');
 import cors from 'cors'
 
@@ -8,11 +9,21 @@ import cors from 'cors'
 
 const app = express();
 app.use(cors());
-
+app.use(cookieParser());
 app.use('/uploads',express.static('uploads'));
 
 
 // Routes
+const products = require("./routes/api/products");
+
+const user = require("./routes/api/user");
+
+const shop = require("./routes/api/cart");
+
+const image = require("./routes/api/images");
+
+const home = require("./routes/api/home");
+
 const postsRoutes = require('./routes/api/posts');
 const addRoutes = require('./routes/api/add');
 const deleteRoutes = require('./routes/api/delete');
@@ -43,6 +54,15 @@ app.use('/',addRoutes);
 app.use('/',postsRoutes);
 app.use('/',postsemailRoutes);
 app.use('/image',ImageRouter);
+
+// app.use("/products", products);
+// app.use("/shop", shop);
+
+app.use("/user", user);
+
+// app.use("/image", image);
+
+// app.use("/home", home);
 
 
 

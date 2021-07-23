@@ -106,8 +106,11 @@ textarea {
   color: #ffffff;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
+
   border: 0.2em solid black;
+
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
 }
 
 .btn:hover {
