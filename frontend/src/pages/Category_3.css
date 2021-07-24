@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Category {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Category div {
+  flex: 50%;
+}

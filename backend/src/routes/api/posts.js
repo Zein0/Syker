@@ -12,6 +12,7 @@ router.get('/test', (req, res) => {
 
     }
     catch(err){
+        
         res.status(400).json({msg:err})
     }
     
