@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const db = require("../index");
+const { checkUser } = require("../Middleware/authUser");
 
 // const DescriptionController = require("./DescriptionController");
 
@@ -81,6 +82,10 @@ module.exports = {
 	},
 	async Logout(req, res) {
 		res.cookie("User", "", { maxAge: 1 });
-		res.redirect("/");
+		res.json({ message: "success" });
+	},
+	async getUser(req, res) {
+		const data = await checkUser(req, res);
+		res.json(data);
 	},
 };

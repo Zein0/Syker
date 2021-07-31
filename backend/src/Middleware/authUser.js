@@ -21,22 +21,19 @@ const requireAuth = (req, res, next) => {
 		res.json({ error: 1 });
 	}
 };
-const checkUser = (req, res, next) => {
+const checkUser = async (req, res, next) => {
 	const token = req.cookies["User"];
 	if (token) {
-		jwt.verify(token, "Syker", async (err, decodedToken) => {
+		return jwt.verify(token, "Syker", async (err, decodedToken) => {
 			if (err) {
-				res.locals.user = null;
-				next();
+				return { user: null };
 			} else {
 				let user = await User.findById(decodedToken.id);
-				res.locals.user = user;
-				next();
+				return { user: user };
 			}
 		});
 	} else {
-		res.locals.user = null;
-		next();
+		return { user: null };
 	}
 };
 module.exports = { requireAuth, checkUser };

@@ -1,8 +1,8 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
 }
 
 .home,
@@ -12,72 +12,82 @@
 .sign-up,
 .marketing,
 .consulting {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+	display: flex;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
 }
 
 .home {
-  background-image: url("./Img/img-1.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-image: url("./Img/img-1.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
 }
 
 .services {
-  background-image: url("./Img/img-2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-image: url("./Img/img-2.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
 }
 
 .products {
-  background-image: url("./Img/img-3.jpg");
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-position: center;
+	background-size: fill;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
 }
 
 .contact-us {
-  background-image: url("./Img/img-4.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-image: url("./Img/img-4.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
 }
 
 .sign-up {
-  background-image: url("./Img/img-7.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-image: url("./Img/img-7.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
 }
 
 .marketing {
-  background-image: url("./Img/img-6.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-image: url("./Img/img-6.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
 }
 
 .consulting {
-  background-image: url("./Img/img-5.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+	background-image: url("./Img/img-5.jpg");
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
+}
+@media screen and (max-width: 880px) {
+  br {
+    display: none;
+  }
+  br:nth-child(2),
+  br:nth-child(3),
+  br:nth-child(4),
+  br:first-child {
+    display: initial;
+  }
 }

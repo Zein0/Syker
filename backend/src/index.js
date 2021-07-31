@@ -20,7 +20,9 @@ const products = require("./routes/api/products");
 
 const user = require("./routes/api/user");
 
-const shop = require("./routes/api/cart");
+const shop = require("./routes/api/shop");
+
+const cart = require("./routes/api/cart");
 
 const home = require("./routes/api/home");
 
@@ -55,8 +57,8 @@ app.use("/", postsemailRoutes);
 app.use("/image", ImageRouter);
 
 app.use("/products", products);
-// app.use("/shop", shop);
-
+app.use("/shop", shop);
+app.use("/cart", cart);
 app.use("/user", user);
 
 // app.use("/image", image);

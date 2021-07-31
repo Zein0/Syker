@@ -61,7 +61,7 @@ const Category_5 = () => {
         <div>
       {Items.slice(0,size).map((item, index) => {
         
-          
+        HasMore    
         if (Items.length === index + 1) {
             
           return (

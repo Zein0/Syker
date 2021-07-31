@@ -9,4 +9,6 @@ router.post("/signup", (req, res) => UserController.addUser(req, res));
 
 router.get("/logout", (req, res) => UserController.Logout(req, res));
 
+router.get("/getuser", (req, res) => UserController.getUser(req, res));
+
 module.exports = router;
