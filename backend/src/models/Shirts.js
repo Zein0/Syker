@@ -8,7 +8,7 @@ const PostSchema = new Schema({
     },
     size: {
         type: String,
-        required: true,
+        required: true
     }
 });
 module.exports = mongoose.model('Shirts',PostSchema);

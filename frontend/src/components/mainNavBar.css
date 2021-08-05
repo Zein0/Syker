@@ -1,0 +1,63 @@
+header div {
+  display: flex;
+
+  align-items: center;
+}
+.logoSkyer {
+  width: 5rem;
+  height: 5rem;
+}
+.secondNav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainNavBar nav {
+  display: flex;
+  justify-content: space-between;
+}
+.mainNavBar ul {
+  border-style: solid;
+  border-width: thick;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  text-align: center;
+}
+
+.mainNavBar li {
+  margin: 1.5rem;
+}
+
+.mainNavBar a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainNavBar a:hover,
+.mainNavBar a:active {
+  color: #fa923f;
+}
+
+#categoriesNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Don't need it  */
+  border-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between; /* space-around to fix but it wraps to center  */
+  flex: 10.8%;
+}
+@media screen and (max-width: 806px) {
+  li {
+    display: flex;
+    justify-content: space-between;
+    flex: 15%;
+  }
+}

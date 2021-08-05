@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "back": "cd backend && npm start",
-      "front": "cd frontend && npm start",
-      "start": "concurrently --kill-others-on-fail --names \"backend,frontend\" \"npm run back\" \"npm run front\"",
-      "postinstall":"cd frontend && npm install && cd .. && cd backend && npm install"
-    },
-
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "back": "cd backend && npm start",
+    "front": "cd frontend && npm start",
+    "start": "concurrently --kill-others-on-fail --names \"backend,frontend\" \"npm run back\" \"npm run front\"",
+    "postinstall": "cd frontend && npm install && cd .. && cd backend && npm install"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taporian/Syker.git"
@@ -22,6 +21,17 @@
   },
   "homepage": "https://github.com/taporian/Syker#readme",
   "dependencies": {
-    "concurrently": "^6.2.0"
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.0",
+    "ejs": "^3.1.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7",
+    "react-file-base64": "^1.0.3",
+    "react-icons": "^4.2.0",
+    "react-image-gallery": "^1.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.3.0"
   }
 }

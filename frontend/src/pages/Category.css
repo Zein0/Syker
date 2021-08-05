@@ -1,0 +1,8 @@
+.Category {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Category div {
+  flex: 50%;
+}

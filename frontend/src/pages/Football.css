@@ -1,0 +1,62 @@
+.blocks {
+	width: 70%;
+}
+.div-links {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	align-items: center;
+}
+.div-links ul {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.basthis {
+	font-size: 50%;
+}
+.div-links li {
+	flex: 10%;
+}
+.add-one,
+.add-all {
+	text-decoration: none;
+}
+.products-comp {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.products img {
+	width: 40%;
+}
+
+.product {
+	/* padding: 40px; */
+}
+
+button {
+	font-size: 20px;
+	padding: 10px;
+}
+
+/* header {
+	background-color: pink;
+	height: 70px;
+	padding-top: 20px;
+} */
+.main--div {
+	padding-bottom: 5%;
+}
+.items-img {
+	width: 50%;
+	height: 50%;
+}
+.btn-prod {
+	width: 50%;
+	height: 25%;
+}
+.cont {
+	width: 50%;
+	border: 1px solid black;
+}

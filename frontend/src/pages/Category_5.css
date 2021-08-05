@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.Category_5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Category_5 div {
+  flex: 25%;
+}
+
+.btnCategory {
+  width: 20%;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  font-size: 1.1rem;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0.2em solid black;
+}
+
+.btnCategory:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border: 0.2em solid black;
+}
