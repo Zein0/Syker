@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "10.19.0"
+  },
   "babel": {
     "presets": [
       "@babel/preset-env"
@@ -49,9 +52,7 @@
     "styled-components": "^5.3.0"
 
   },
-  "engines": {
-    "node": "10.19.0"
-  },
+  
   
   "devDependencies": {
     "dotenv": "^10.0.0",
