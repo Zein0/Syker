@@ -3,15 +3,12 @@ const mongoose = require("mongoose");
 const { MONGO_URI } = require("./config");
 const cookieParser = require("cookie-parser");
 const path = require("path");
-import cors from "cors";
 
 const app = express();
-app.use(
-	cors({
-		origin: true,
-		credentials: true,
-	})
-);
+app.use(express.static(path.resolve(__dirname, "../frontend/build")));
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+});
 app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
 
@@ -65,5 +62,5 @@ app.use("/user", user);
 
 app.use("/home", home);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server run at port ${PORT} `));

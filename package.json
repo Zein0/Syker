@@ -1,31 +1,45 @@
 {
-  "name": "syker",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "back": "cd backend && npm start",
-    "front": "cd frontend && npm start",
-    "start": "concurrently --kill-others-on-fail --names \"backend,frontend\" \"npm run back\" \"npm run front\"",
-    "postinstall": "cd frontend && npm install && cd .. && cd backend && npm install"
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/taporian/Syker.git"
+  "scripts": {
+    "start": "node index.js",
+    "build:clean": "rimraf ./build",
+    "build:build": "babel src --out-dir ./build --source-maps",
+    "build": "cd client && npm install && npm run build",
+    "production": "node ./build/index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/taporian/Syker/issues"
-  },
-  "homepage": "https://github.com/taporian/Syker#readme",
   "dependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.2",
+    "rimraf": "^3.0.2",
+    "serve-favicon": "^2.5.0",
+    "validator": "^13.6.0",
     "axios": "^0.21.1",
     "concurrently": "^6.2.0",
     "ejs": "^3.1.6",
-    "multer": "^1.4.2",
-    "nodemailer": "^6.6.3",
     "path": "^0.12.7",
     "react-file-base64": "^1.0.3",
     "react-icons": "^4.2.0",
@@ -33,5 +47,14 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.3.0"
+
+  },
+  "engines": {
+    "node": "10.19.0"
+  },
+  
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.9"
   }
 }
