@@ -6,9 +6,7 @@ const path = require("path");
 
 const app = express();
 app.use(express.static(path.resolve(__dirname, "../frontend/build")));
-app.get("*", (req, res) => {
-	res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
-});
+
 app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
 
@@ -61,6 +59,8 @@ app.use("/user", user);
 // app.use("/image", image);
 
 app.use("/home", home);
-
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+});
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server run at port ${PORT} `));
