@@ -12,7 +12,7 @@
     "start": "node index.js",
     "build:clean": "rimraf ./build",
     "build:build": "babel src --out-dir ./build --source-maps",
-    "build": "cd client && npm install && npm run build",
+    "build": "cd frontend && npm install && npm run build",
     "production": "node ./build/index.js"
   },
   "author": "",
