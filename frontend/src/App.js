@@ -59,9 +59,6 @@ function App() {
 				<Route path="/marketing" component={Marketing} />
 				<Route path="/consulting" component={Consulting} />
 				<Route path="/SportsCollections" component={SportsCollections} />
-				<Route path="/Category_2" component={Category_2} />
-				<Route path="/Category_3" component={Category_3} />
-				<Route path="/Category" component={Category} />
 				<Route path="/Football" component={Football} />
 				<Route path="/Basketball" component={Basketball} />
 				<Route path="/Casual" component={Casual} />
