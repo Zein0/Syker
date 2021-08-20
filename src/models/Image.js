@@ -1,5 +1,5 @@
-import mongoose, { Schema } from "mongoose";
-
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 var ImageSchema = new Schema({
 	imageName: {
 		type: String,
