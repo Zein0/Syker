@@ -36,7 +36,7 @@ class Home2 extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="site">
 				<div className="container">
 					<div className="contact-box">
 						<div className="left">

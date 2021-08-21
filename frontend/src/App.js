@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home2 from "./pages/Home2";
+import { Helmet } from "react-helmet";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -51,7 +52,13 @@ function App() {
 	});
 
 	return (
+		
 		<Router>
+		
+<Helmet>
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1 user-scalable=0"/>
+</Helmet>
 			<Navbar user={user} quan={quan} />
 			<br /> <br /> <br /> <br /> <br /> <br /> <br />
 			<Switch>
