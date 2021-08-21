@@ -50,6 +50,7 @@ body {
 	background-size: cover;
 	height: 100%;
 	padding: 25px 40px;
+	width: fit-content;
 }
 
 .right {
@@ -58,6 +59,7 @@ body {
 
 .left p {
 	text-align: justify;
+	width: auto;
 }
 h2 {
 	position: relative;
@@ -127,5 +129,6 @@ textarea {
 @media screen and (max-width: 880px) {
 	.contact-box {
 		grid-template-columns: 2fr;
+		max-width: 90vw;
 	}
 }
