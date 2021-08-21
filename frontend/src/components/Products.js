@@ -43,10 +43,7 @@ export default function Products({ setCart, cart, newproducts, user }) {
 			{newproducts.map((product, idx) => (
 				<div className="left">
 					<h2>{product.name}</h2>
-					<img
-						className="homeImage"
-						src={"http://localhost:8000/" + product.image}
-					/>
+					<img className="homeImage" src={product.image} />
 					<span>Size:{product.size}</span>
 					<br />
 					<h2>Price: {product.price}$</h2>
