@@ -63,7 +63,6 @@ function App() {
 			<br /> <br /> <br /> <br /> <br /> <br /> <br />
 			<Switch>
 				<Route path="/" exact component={Home2} />
-				<Route path="/products" component={Products} />
 				<Route path="/contact-us" component={Contacts} />
 				<Route path="/log-in" component={LogIn} />
 				<Route path="/sign-up" component={SignUp} />

@@ -52,8 +52,28 @@ function Navbar({ user, quan }) {
 					onMouseEnter={onMouseEnter}
 					onMouseLeave={onMouseLeave}
 				>
-					<Link to="/services" className="nav-links" onClick={closeMobileMenu}>
-						Shop <i className="fas fa-caret-down" />
+					<Link to="/Football" className="nav-links" onClick={closeMobileMenu}>
+					Football <i className="fas fa-caret-down" />
+					</Link>
+					{dropdown && <Dropdown />}
+				</li>
+				<li
+					className="nav-item"
+					onMouseEnter={onMouseEnter}
+					onMouseLeave={onMouseLeave}
+				>
+					<Link to="/Basketball" className="nav-links" onClick={closeMobileMenu}>
+					Basketball <i className="fas fa-caret-down" />
+					</Link>
+					{dropdown && <Dropdown />}
+				</li>
+				<li
+					className="nav-item"
+					onMouseEnter={onMouseEnter}
+					onMouseLeave={onMouseLeave}
+				>
+					<Link to="/Casual" className="nav-links" onClick={closeMobileMenu}>
+					Casual <i className="fas fa-caret-down" />
 					</Link>
 					{dropdown && <Dropdown />}
 				</li>
