@@ -46,36 +46,35 @@ function Navbar({ user, quan }) {
 			<div className="menu-icon" onClick={handleClick}>
 				<i className={click ? "fas fa-times" : "fas fa-bars"} />
 			</div>
-			<ul className={click ? "nav-menu active" : "nav-menu"}>
+			<ul className={click ? "nav-menu active desktop" : "nav-menu desktop"}>
 				<li
 					className="nav-item"
 					onMouseEnter={onMouseEnter}
 					onMouseLeave={onMouseLeave}
 				>
+					<Link className="nav-links" onClick={closeMobileMenu}>
+						Shop <i className="fas fa-caret-down" />
+					</Link>
+					{dropdown && <Dropdown />}
+				</li>
+				<li className="nav-item mobile">
 					<Link to="/Football" className="nav-links" onClick={closeMobileMenu}>
-					Football <i className="fas fa-caret-down" />
+						Football
 					</Link>
-					{dropdown && <Dropdown />}
 				</li>
-				<li
-					className="nav-item"
-					onMouseEnter={onMouseEnter}
-					onMouseLeave={onMouseLeave}
-				>
-					<Link to="/Basketball" className="nav-links" onClick={closeMobileMenu}>
-					Basketball <i className="fas fa-caret-down" />
+				<li className="nav-item mobile">
+					<Link
+						to="/Basketball"
+						className="nav-links"
+						onClick={closeMobileMenu}
+					>
+						Basketball
 					</Link>
-					{dropdown && <Dropdown />}
 				</li>
-				<li
-					className="nav-item"
-					onMouseEnter={onMouseEnter}
-					onMouseLeave={onMouseLeave}
-				>
+				<li className="nav-item mobile">
 					<Link to="/Casual" className="nav-links" onClick={closeMobileMenu}>
-					Casual <i className="fas fa-caret-down" />
+						Casual ({quan})
 					</Link>
-					{dropdown && <Dropdown />}
 				</li>
 				{user != null && (
 					<li className="nav-item">

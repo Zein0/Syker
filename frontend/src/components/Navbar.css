@@ -9,7 +9,9 @@
 	align-items: center;
 	font-size: 1.2rem;
 }
-
+.mobile {
+	display: none;
+}
 .navbar-logo {
 	color: #fff;
 	justify-self: start;
@@ -90,6 +92,12 @@
 }
 
 @media screen and (max-width: 960px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: initial;
+	}
 	.NavbarItems {
 		position: relative;
 	}
