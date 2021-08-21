@@ -49,10 +49,12 @@ export default function Products({ setCart, cart, newproducts, user }) {
 					<h2>Price: {product.price}$</h2>
 					<div className="shopNow-Container">
 						<Link>
-							<button className="btn2" onClick={() => addToCart(product)}>
-								{" "}
-								Add to cart{" "}
-							</button>
+							<center>
+								<button className="btn2" onClick={() => addToCart(product)}>
+									{" "}
+									Add to cart{" "}
+								</button>
+							</center>
 						</Link>
 					</div>
 				</div>

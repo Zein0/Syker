@@ -50,10 +50,13 @@ body {
 	background-size: cover;
 	height: 100%;
 	max-width: 85vw;
+	padding: 25px 50px;
 	margin: auto;
 }
 
 .right {
+	max-width: 85vw;
+	margin: auto;
 	padding: 25px 50px;
 }
 
@@ -130,5 +133,9 @@ textarea {
 	.contact-box {
 		grid-template-columns: 2fr;
 		max-width: 90vw;
+	}
+	.right,
+	.left {
+		padding: 0 0;
 	}
 }
