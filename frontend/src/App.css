@@ -4,6 +4,11 @@
 	padding: 0;
 	font-family: "PT Sans", sans-serif;
 }
+html {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
 
 .home,
 .services,
@@ -81,13 +86,13 @@
 	font-size: 100px;
 }
 @media screen and (max-width: 880px) {
-  br {
-    display: none;
-  }
-  br:nth-child(2),
-  br:nth-child(3),
-  br:nth-child(4),
-  br:first-child {
-    display: initial;
-  }
+	br {
+		display: none;
+	}
+	br:nth-child(2),
+	br:nth-child(3),
+	br:nth-child(4),
+	br:first-child {
+		display: initial;
+	}
 }
