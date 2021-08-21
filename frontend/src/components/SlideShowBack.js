@@ -2,7 +2,7 @@ import React from "react";
 import "./SlideshowBack.css";
 import "./ImageSlider.css";
 
-const delay = 3000;
+const delay = 300000;
 
 function SlideshowBack({ slides }) {
 	const [current, setIndex] = React.useState(0);
