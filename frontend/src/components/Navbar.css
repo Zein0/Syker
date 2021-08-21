@@ -101,7 +101,7 @@
 	.nav-menu {
 		display: flex;
 		flex-direction: column;
-		width: 100vh;
+		width: 100vw;
 		height: 90vh;
 		position: absolute;
 		top: 80px;
@@ -121,7 +121,7 @@
 	.nav-links {
 		text-align: center;
 		padding: 2rem;
-		width: 100%;
+		width: 100vw;
 		display: table;
 	}
 
@@ -159,7 +159,7 @@
 		padding: 1.5rem;
 		margin: 2rem auto;
 		border-radius: 4px;
-		width: 80%;
+		width: 80vw;
 		background: black;
 		text-decoration: none;
 		color: #fff;
