@@ -92,11 +92,11 @@
 }
 
 @media screen and (max-width: 960px) {
-	.desktop {
+	.nav-menu.active.desktop {
 		display: none;
 	}
 	.mobile {
-		display: initial;
+		display: block;
 	}
 	.NavbarItems {
 		position: relative;
