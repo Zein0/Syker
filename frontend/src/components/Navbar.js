@@ -58,21 +58,29 @@ function Navbar({ user, quan }) {
 					{dropdown && <Dropdown />}
 				</li>
 				<li className="nav-item-mobile">
-					<Link to="/Football" className="nav-links" onClick={closeMobileMenu}>
+					<Link
+						to="/Football"
+						className="nav-links-mobile"
+						onClick={closeMobileMenu}
+					>
 						Football
 					</Link>
 				</li>
 				<li className="nav-item-mobile">
 					<Link
 						to="/Basketball"
-						className="nav-links"
+						className="nav-links-mobile"
 						onClick={closeMobileMenu}
 					>
 						Basketball
 					</Link>
 				</li>
 				<li className="nav-item mobile">
-					<Link to="/Casual" className="nav-links" onClick={closeMobileMenu}>
+					<Link
+						to="/Casual"
+						className="nav-links-mobile"
+						onClick={closeMobileMenu}
+					>
 						Casual
 					</Link>
 				</li>

@@ -92,7 +92,7 @@
 }
 
 @media screen and (max-width: 960px) {
-	.nav-menu.active.desktop {
+	.nav-menu.active.desktop li:first-child {
 		display: none;
 	}
 	.mobile {
@@ -112,7 +112,7 @@
 		width: 100vw;
 		height: 90vh;
 		position: absolute;
-		top: 80px;
+		top: 9vh;
 		left: -100%;
 		opacity: 1;
 		transition: all 0.5s ease;

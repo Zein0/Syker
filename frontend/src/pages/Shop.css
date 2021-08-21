@@ -38,8 +38,7 @@ h3 span {
 
 .homeImage {
 	object-fit: contain;
-	margin: 20px;
-	padding: 5px;
+	padding: 0;
 	height: 400px;
 	width: 300px;
 	opacity: 1;

@@ -1,5 +1,4 @@
 .blocks {
-	width: 70%;
 }
 .div-links {
 	padding-top: 5%;
@@ -13,7 +12,7 @@
 	list-style: none;
 }
 .basthis {
-	font-size: 50%;
+	font-size: 25%;
 }
 .div-links li {
 	flex: 10%;
