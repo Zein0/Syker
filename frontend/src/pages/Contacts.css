@@ -42,7 +42,7 @@ body {
 	z-index: -1;
 }
 .contact-box {
-	max-width: 100vw;
+	max-width: 90vw;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr); /* makes the inputs half size */
 	justify-content: center;
