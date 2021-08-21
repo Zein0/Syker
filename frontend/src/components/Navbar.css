@@ -95,6 +95,9 @@
 	.nav-menu.active.desktop li:first-child {
 		display: none;
 	}
+	.nav-menu {
+		justify-content: initial;
+	}
 	.mobile {
 		display: block;
 	}
