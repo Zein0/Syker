@@ -51,6 +51,7 @@ body {
 	height: 100%;
 	padding: 25px 40px;
 	max-width: 85vw;
+	margin: auto;
 }
 
 .right {
