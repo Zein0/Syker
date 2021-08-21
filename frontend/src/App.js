@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home2 from "./pages/Home2";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from "react-router-dom";
 import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Contacts from "./pages/Contacts";
@@ -63,6 +68,7 @@ function App() {
 				<Route path="/Basketball" component={Basketball} />
 				<Route path="/Casual" component={Casual} />
 				<Route path="/Cart" component={Cart} />
+				<Redirect path="/"></Redirect>
 			</Switch>
 			<Footer />
 		</Router>

@@ -1,8 +1,8 @@
-const API_URL = "http://localhost:3001";
+const API_URL = "";
 
 export const SliderDataSports_1 = [
 	{
-		image: `${API_URL}/uploads/home-1.jpg`,
+		image: `../../../uploads/home-1.jpg`,
 	},
 	{
 		image: `${API_URL}/uploads/home-2.jpg`,
