@@ -96,21 +96,6 @@ h3 span {
 	border: 0.2em solid black;
 }
 
-@media all and (max-width: 50em) {
-	.shopNow-Container {
-		display: flex;
-	}
-	.shopNow {
-		display: block;
-		margin: 0.5em 22.5em;
-	}
-	.homeImage3 {
-		display: none;
-	}
-	.homeImage {
-		object-fit: contain;
-	}
-}
 .btn3 {
 	width: 100%;
 	padding: 0.5rem 1rem;
@@ -141,6 +126,20 @@ h3 span {
 		display: block;
 		margin: 10em 10em;
 		height: 50px;
+	}
+	.shopNow-Container {
+		display: block;
+	}
+	.shopNow {
+		display: block;
+		margin: 0.5em 22.5em;
+	}
+	.homeImage3 {
+		display: none;
+	}
+	.homeImage {
+		object-fit: contain;
+		margin: auto;
 	}
 }
 

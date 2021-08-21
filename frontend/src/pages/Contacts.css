@@ -10,7 +10,13 @@ body {
 	/* width: 100%; */
 }
 .left h2 {
-	margin-top: 20px;
+	margin-top: 7vh;
+}
+.right h2 {
+	margin-top: 10vh;
+}
+.right form {
+	width: 90%;
 }
 .container {
 	position: relative;
@@ -49,12 +55,12 @@ body {
 .left {
 	background-size: cover;
 	height: 100%;
-	max-width: 85vw;
-	padding: 25px 50px;
+	max-width: 90vw;
+	padding: 1em 1.5em;
 }
 
 .right {
-	max-width: 85vw;
+	max-width: 90vw;
 	margin: auto;
 }
 
