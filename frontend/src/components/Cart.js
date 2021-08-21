@@ -5,7 +5,6 @@ export default function Cart({ cart, setCart }) {
 		return cart.reduce((sum, { price, quantity }) => sum + price * quantity, 0);
 	};
 
-
 	const setQuantity = (product, amount) => {
 		const newCart = [...cart];
 		newCart.find((item) => item.name === product.name).quantity = amount;
@@ -17,7 +16,7 @@ export default function Cart({ cart, setCart }) {
 	};
 	const Order = async () => {
 		console.log(cart);
-		const res = await fetch("http://localhost:8000/cart/order", {
+		const res = await fetch("cart/order", {
 			method: "POST",
 			body: JSON.stringify({ cart }),
 			headers: { "Content-Type": "application/json" },
@@ -45,11 +44,7 @@ export default function Cart({ cart, setCart }) {
 							value={product.quantity}
 							onChange={(e) => setQuantity(product, parseInt(e.target.value))}
 						/>
-						<img
-							className="items-img"
-							src={"http://localhost:8000/" + product.image}
-							alt={product.name}
-						/>
+						<img className="items-img" src={product.image} alt={product.name} />
 						<button className="btn" onClick={() => removeFromCart(product)}>
 							Remove
 						</button>
@@ -58,7 +53,6 @@ export default function Cart({ cart, setCart }) {
 			</div>
 			{cart.length > 0 && <button onClick={() => Order()}>Order</button>}
 			{cart.length > 0 && <div>Total Cost: ${getTotalSum()}</div>}
-			
 		</div>
 	);
 }

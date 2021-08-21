@@ -9,7 +9,7 @@ export default function Products({ setCart, cart, newproducts, user }) {
 
 	const addToCart = async (product) => {
 		if (user != null) {
-			const res = await fetch("http://localhost:8000/shop/addtoCart", {
+			const res = await fetch("shop/addtoCart", {
 				method: "POST",
 				body: JSON.stringify({
 					user: user._id,

@@ -15,7 +15,7 @@ import {
 import Slideshow from "../components/SlideShow";
 import SlideshowBack from "../components/SlideShowBack";
 import ImageSlider from "../components/ImageSlider";
-const API_URL = "http://localhost:8000";
+const API_URL = "";
 class Home2 extends Component {
 	constructor(props) {
 		super(props);
@@ -27,7 +27,7 @@ class Home2 extends Component {
 		};
 	}
 	componentDidMount() {
-		axios.get("http://localhost:8000/home/").then((res) => {
+		axios.get("home").then((res) => {
 			console.log(res);
 
 			this.setState({ posts: res.data });

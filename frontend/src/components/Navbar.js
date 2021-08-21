@@ -13,7 +13,7 @@ function Navbar({ user, quan }) {
 	const closeMobileMenu = () => setClick(false);
 
 	const LogOut = async () => {
-		const res = await fetch("http://localhost:8000/user/logout", {
+		const res = await fetch("user/logout", {
 			method: "Get",
 			headers: { "Content-Type": "application/json" },
 			credentials: "include",

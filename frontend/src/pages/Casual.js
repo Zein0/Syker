@@ -9,7 +9,7 @@ import "./Shop.css";
 const Casual = () => {
 	const [user, setUser] = useState(null);
 	const rend = async () => {
-		const res = await fetch("http://localhost:8000/user/getuser", {
+		const res = await fetch("user/getuser", {
 			method: "Get",
 			headers: { "Content-Type": "application/json" },
 			credentials: "include",
@@ -47,7 +47,7 @@ const Casual = () => {
 	const subcategory = "Casual";
 
 	const RunAll = async (e) => {
-		const res = await fetch("http://localhost:8000/Shop/alltype", {
+		const res = await fetch("Shop/alltype", {
 			method: "Post",
 			body: JSON.stringify({ size, subcategory }),
 			headers: { "Content-Type": "application/json" },
@@ -61,7 +61,7 @@ const Casual = () => {
 		if (e.target.innerHTML == "Shirts") {
 			type = "Tshirts";
 		}
-		const res = await fetch("http://localhost:8000/Shop/onetype", {
+		const res = await fetch("Shop/onetype", {
 			method: "Post",
 			body: JSON.stringify({ size, subcategory, type }),
 			headers: { "Content-Type": "application/json" },

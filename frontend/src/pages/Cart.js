@@ -15,7 +15,7 @@ function Cart() {
 		},
 	]);
 	const RemoveFromCart = async (product) => {
-		const res = await fetch("http://localhost:8000/shop/delete", {
+		const res = await fetch("shop/delete", {
 			method: "PUT",
 			body: JSON.stringify({
 				name: product.name,
@@ -33,13 +33,13 @@ function Cart() {
 		return tots;
 	};
 	const OrderCart = async () => {
-		const res = await fetch("http://localhost:8000/cart/order", {
+		const res = await fetch("cart/order", {
 			method: "POST",
 			body: JSON.stringify({ cart, TotalPrice: getTotal() }),
 			headers: { "Content-Type": "application/json" },
 			credentials: "include",
 		});
-		await fetch("http://localhost:8000/shop/OrderCart", {
+		await fetch("shop/OrderCart", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			credentials: "include",
@@ -53,7 +53,7 @@ function Cart() {
 		}
 	};
 	const getCart = async () => {
-		const res = await fetch("http://localhost:8000/shop/getcart", {
+		const res = await fetch("shop/getcart", {
 			method: "Post",
 			headers: { "Content-Type": "application/json" },
 			credentials: "include",
@@ -104,10 +104,7 @@ function Cart() {
 						<div className="left">
 							{console.log(item)}
 							<h2>{item.name}</h2>
-							<img
-								className="homeImage"
-								src={"http://localhost:8000/" + item.image}
-							/>
+							<img className="homeImage" src={item.image} />
 							<br />
 							<span>Quantity :{item.quantity}</span>
 							<br />

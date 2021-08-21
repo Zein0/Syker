@@ -2,7 +2,7 @@ const API_URL = "";
 
 export const SliderDataSports_1 = [
 	{
-		image: `../../../uploads/home-1.jpg`,
+		image: `uploads/home-1.jpg`,
 	},
 	{
 		image: `${API_URL}/uploads/home-2.jpg`,
