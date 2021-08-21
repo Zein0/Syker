@@ -56,14 +56,10 @@ function App() {
 			<br /> <br /> <br /> <br /> <br /> <br /> <br />
 			<Switch>
 				<Route path="/" exact component={Home2} />
-				<Route path="/services" component={Services} />
 				<Route path="/products" component={Products} />
 				<Route path="/contact-us" component={Contacts} />
 				<Route path="/log-in" component={LogIn} />
 				<Route path="/sign-up" component={SignUp} />
-				<Route path="/marketing" component={Marketing} />
-				<Route path="/consulting" component={Consulting} />
-				<Route path="/SportsCollections" component={SportsCollections} />
 				<Route path="/Football" component={Football} />
 				<Route path="/Basketball" component={Basketball} />
 				<Route path="/Casual" component={Casual} />
