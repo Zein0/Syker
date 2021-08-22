@@ -27,7 +27,7 @@ function App() {
 	const [user, setUser] = useState(null);
 	const [quan, setQuan] = useState(0);
 	const Addnum = async (e) => {
-		const res = await fetch("http://localhost:8000/Shop/getnumofItems", {
+		const res = await fetch("Shop/getnumofItems", {
 			method: "Post",
 			body: JSON.stringify({ user }),
 			headers: { "Content-Type": "application/json" },
@@ -37,7 +37,7 @@ function App() {
 		setQuan(data.quantity);
 	};
 	const rend = async () => {
-		const res = await fetch("http://localhost:8000/user/getuser", {
+		const res = await fetch("user/getuser", {
 			method: "Get",
 			headers: { "Content-Type": "application/json" },
 			credentials: "include",
@@ -52,13 +52,13 @@ function App() {
 	});
 
 	return (
-		
 		<Router>
-		
-<Helmet>
-<meta name="viewport" 
-      content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1 user-scalable=0"/>
-</Helmet>
+			<Helmet>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0001, maximum-scale=1.0001,minimum-scale=1.0001, user-scalable=0"
+				/>
+			</Helmet>
 			<Navbar user={user} quan={quan} />
 			<br /> <br /> <br /> <br /> <br /> <br /> <br />
 			<Switch>
