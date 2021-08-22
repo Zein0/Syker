@@ -46,7 +46,7 @@ function Cart() {
 			credentials: "include",
 		});
 		const data = await res.json();
-		if (data.status.equals("success")) {
+		if (data.status === "success") {
 			alert("Order Sent.");
 			window.location.assign("/");
 		} else if (data.status === "fail") {
