@@ -49,7 +49,7 @@ function App() {
 	useEffect(() => {
 		rend();
 		Addnum();
-	});
+	}, []);
 
 	return (
 		<Router>

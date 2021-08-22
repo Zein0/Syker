@@ -62,6 +62,7 @@ module.exports = {
 
 			transporter.sendMail(mail, (err, data) => {
 				if (err) {
+					console.log(err);
 					res.json({
 						status: "fail",
 					});

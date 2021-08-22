@@ -30,6 +30,7 @@ function Cart() {
 		cart.map((item) => {
 			tots += item.price * item.quantity;
 		});
+		console.log(tots);
 		return tots;
 	};
 	const OrderCart = async () => {
@@ -45,7 +46,7 @@ function Cart() {
 			credentials: "include",
 		});
 		const data = await res.json();
-		if (data.status === "success") {
+		if (data.status.equals("success")) {
 			alert("Order Sent.");
 			window.location.assign("/");
 		} else if (data.status === "fail") {
