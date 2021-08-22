@@ -56,7 +56,7 @@ function App() {
 			<Helmet>
 				<meta
 					name="viewport"
-					content="width=device-width, initial-scale=1.0001, maximum-scale=1.0001,minimum-scale=1.0001, user-scalable=0"
+					content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,shrink-to-fit=no"
 				/>
 			</Helmet>
 			<Navbar user={user} quan={quan} />
